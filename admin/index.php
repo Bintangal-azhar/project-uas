@@ -13,6 +13,8 @@
 					<div class="jumbotron">
 						<h2>SELAMAT DATANG ( <?php echo $_SESSION['username'];?> )</h2>
 						<p>Ini adalah website BintangShowroom</p>
+						<button class="btn btn-primary">Tambah Produk</button>
+						<button class="btn btn-success">Tampil produk</button>
 						
 				</div>
       </div>
