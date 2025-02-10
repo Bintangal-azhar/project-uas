@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2024 at 07:30 AM
+-- Generation Time: Feb 10, 2025 at 07:51 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `showroom_kita`
+-- Database: `showroomkita`
 --
 
 -- --------------------------------------------------------
@@ -62,7 +62,8 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`id`, `nama`, `harga`, `gambar`, `created_at`) VALUES
-(1, 'bmw', 500000000, 'mobil1.png', '2024-12-11 13:57:38');
+(1, 'bmw', 500000000, 'mobil1.png', '2024-12-11 13:57:38'),
+(3, 'pajero', 400000000, '2025-02-10-7-24-29.png', '2025-02-10 06:26:49');
 
 -- --------------------------------------------------------
 
@@ -86,10 +87,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `username`, `password`, `email`, `token`, `status`, `foto`, `last_login`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'roberto.kakaban@yahoo.com', 'c0e024d9200b5705bc4804722636378a', '1', '2023-12-13-2-15-06.png', '2024-12-11 20:57:02'),
-(2, 'admin1', 'e00cf25ad42683b3df678c61f42c6bda', 'admin@local', '00f453a6842f1883ca3be7b31a6626f0', '1', '-', '2023-12-13 09:30:00'),
-(3, 'admin2', '315f166c5aca63a157f7d41007675cb44a948b33', 'dsafsdf@sdgsg', 'f', NULL, '', '2023-12-13 10:23:42'),
-(4, 'tes', '28b662d883b6d76fd96e4ddc5e9ba780', 'tes@gmail.com', '61581b8521e43a18e50c1f3d60147be7', '1', '', '2024-11-19 20:37:27');
+(4, 'tes', '28b662d883b6d76fd96e4ddc5e9ba780', 'tes@gmail.com', '61581b8521e43a18e50c1f3d60147be7', '1', '2025-02-10-7-24-29.png', '2025-02-10 13:23:25'),
+(5, 'bintang', '801dc3c9e3bcd2a3cf428f3b79b312b6', 'bintang@gmail.com', 'a711e0991dd74f3778e900e609161627', '1', '2025-02-10-7-29-04.png', '2025-02-10 13:50:18');
 
 --
 -- Indexes for dumped tables
@@ -129,13 +128,13 @@ ALTER TABLE `komentar`
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `user_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
